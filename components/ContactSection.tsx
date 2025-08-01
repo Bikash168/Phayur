@@ -24,15 +24,15 @@ export default function ContactSection() {
         <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-2xl shadow-lg text-white space-y-6">
           <h2 className="text-3xl font-bold text-lime-400">Contact Information</h2>
           <div className="space-y-4 text-lg">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 justify-center">
               <Phone className="w-5 h-5 text-lime-400" />
               <span>+91 9439173220</span>
             </div>
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 justify-center">
               <Mail className="w-5 h-5 text-lime-400" />
               <span>contact@phayur.in</span>
             </div>
-            <div className="flex items-start space-x-3">
+            <div className="flex items-start space-x-3 justify-center">
               <MapPin className="w-5 h-5 text-lime-400 mt-1" />
               <span>
                 F-2, Chandaka Industrial Estate,<br />
