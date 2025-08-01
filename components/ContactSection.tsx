@@ -1,4 +1,3 @@
-// ContactSection.tsx
 "use client";
 
 import { Mail, Phone, MapPin } from "lucide-react";
@@ -6,16 +5,18 @@ import { Mail, Phone, MapPin } from "lucide-react";
 export default function ContactSection() {
   return (
     <section
-  id="contact"
-  className="w-full py-24 px-6 md:px-16 bg-gradient-to-br from-emerald-900 via-green-800 to-emerald-950 text-white"
->
-
+      id="contact"
+      className="w-full py-24 px-6 md:px-16 bg-gradient-to-br from-emerald-900 via-green-800 to-emerald-950 text-white"
+    >
       <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-center">
         Contact Us
       </h2>
-      <p className="text-center mb-12 text-gray-200 max-w-2xl mx-auto">
-        Have questions or want to work with us? Fill out the form or visit our office.
-        We’d love to hear from you!
+
+      <p className="text-center mb-4 text-gray-200 max-w-3xl mx-auto text-lg">
+        We’d love to hear from you.
+      </p>
+      <p className="text-center mb-12 text-gray-300 max-w-3xl mx-auto">
+        Whether you're a <strong>researcher</strong>, <strong>farmer</strong>, <strong>health practitioner</strong>, <strong>student</strong>, or <strong>organization</strong> working in related fields — we welcome your interest in collaborating, learning, or exploring our work further.
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -40,7 +41,9 @@ export default function ContactSection() {
               <MapPin className="w-6 h-6 text-lime-400" />
               <div>
                 <h4 className="font-semibold">Address</h4>
-                <p className="text-sm text-gray-300">123 Green Street, Bhubaneswar, Odisha</p>
+                <p className="text-sm text-gray-300">
+                  123 Green Street, Bhubaneswar, Odisha
+                </p>
               </div>
             </div>
           </div>
@@ -74,7 +77,7 @@ export default function ContactSection() {
         </div>
 
         {/* Google Map */}
-        <div className="rounded-2xl overflow-hidden shadow-xl h-[500px]">
+        <div className="rounded-2xl overflow-hidden shadow-xl h-[600px]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.1466901744744!2d85.8317!3d20.2961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d5f95e7d7f%3A0x9ff282b49b8b6cf6!2sTrident%20Academy%20of%20Technology!5e0!3m2!1sen!2sin!4v1617366233071!5m2!1sen!2sin"
             width="100%"

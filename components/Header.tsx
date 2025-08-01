@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const sections = ['home', 'aboutus', 'services', 'contact'];
+const sections = ['home', 'aboutus', 'services', 'digital-platforms', 'contact'];
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +36,7 @@ const Header = () => {
         { id: 'home', label: 'Home' },
         { id: 'aboutus', label: 'About Us' },
         { id: 'services', label: 'Services' },
+        { id: 'digital-platforms', label: 'Digital Platforms' },
         { id: 'contact', label: 'Contact Us' },
     ];
 

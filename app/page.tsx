@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services"
 import AboutUs from '@/components/AboutUs';
 import ContactSection from '@/components/ContactSection';
+import DigitalPlatforms from "@/components/DigitalPlatforms";
 
 export default function Home() {
   return (
@@ -26,6 +27,10 @@ export default function Home() {
       {/* What We Do Section */}
       <section id="services" className="py-20 bg-white px-4 md:px-12 text-center">
         <Services />
+      </section>
+
+        <section id="digital-platforms" className="py-20 bg-white px-4 md:px-12 text-center">
+        <DigitalPlatforms />
       </section>
 
       {/* Contact Us Section */}
