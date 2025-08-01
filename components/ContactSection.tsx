@@ -13,7 +13,7 @@ export default function ContactSection() {
       </h2>
 
       <p className="text-center mb-4 text-gray-200 max-w-3xl mx-auto text-lg">
-        We’d love to hear from you.
+       Get in touch with us.
       </p>
       <p className="text-center mb-12 text-gray-300 max-w-3xl mx-auto">
         Whether you are a <strong>researcher</strong>, <strong>farmer</strong>, <strong>health practitioner</strong>, <strong>student</strong>, or <strong>organization</strong> working in related fields — we welcome your interest in collaborating, learning, or exploring our work further.
