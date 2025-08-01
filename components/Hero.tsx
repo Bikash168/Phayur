@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <section className="relative w-full h-[100vh]">
+    <section id='home' className="relative w-full h-[100vh]">
       {/* This wrapper enables vertical scrolling on touch devices */}
       <div style={{ touchAction: "pan-y" }}>
         <Carousel

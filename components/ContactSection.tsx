@@ -21,65 +21,72 @@ export default function ContactSection() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Contact Info + Form */}
-        <div className="flex flex-col justify-between bg-emerald-800 bg-opacity-30 backdrop-blur-lg rounded-2xl p-8 shadow-xl">
-          <div className="space-y-6">
-            <div className="flex items-start space-x-4">
-              <Phone className="w-6 h-6 text-lime-400" />
-              <div>
-                <h4 className="font-semibold">Phone</h4>
-                <p className="text-sm text-gray-300">+91 12345 67890</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <Mail className="w-6 h-6 text-lime-400" />
-              <div>
-                <h4 className="font-semibold">Email</h4>
-                <p className="text-sm text-gray-300">contact@yourdomain.com</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <MapPin className="w-6 h-6 text-lime-400" />
-              <div>
-                <h4 className="font-semibold">Address</h4>
-                <p className="text-sm text-gray-300">
-                  123 Green Street, Bhubaneswar, Odisha
-                </p>
-              </div>
-            </div>
-          </div>
+ <section className="relative bg-gradient-to-b from-emerald-900 via-black to-emerald-900 py-20 px-6">
+  <div className="max-w-2xl mx-auto space-y-10">
 
-          {/* Form */}
-          <form className="mt-10 space-y-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full px-4 py-2 rounded-lg bg-white/10 text-white border border-white/20 focus:outline-none focus:ring-2 focus:ring-lime-400"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full px-4 py-2 rounded-lg bg-white/10 text-white border border-white/20 focus:outline-none focus:ring-2 focus:ring-lime-400"
-              required
-            />
-            <textarea
-              placeholder="Your Message"
-              className="w-full px-4 py-2 h-32 rounded-lg bg-white/10 text-white border border-white/20 focus:outline-none focus:ring-2 focus:ring-lime-400 resize-none"
-              required
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full bg-lime-500 hover:bg-lime-600 text-black font-bold py-2 px-6 rounded-lg transition duration-300"
-            >
-              Send Message
-            </button>
-          </form>
+    {/* Top Box: Contact Information */}
+    <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-2xl shadow-lg text-white space-y-6">
+      <h2 className="text-3xl font-bold text-lime-400">Contact Information</h2>
+      <div className="space-y-4 text-lg">
+        <div className="flex items-center space-x-3">
+          <Phone className="w-5 h-5 text-lime-400" />
+          <span>+91 9439173220</span>
         </div>
+        <div className="flex items-center space-x-3">
+          <Mail className="w-5 h-5 text-lime-400" />
+          <span>contact@phayur.in</span>
+        </div>
+        <div className="flex items-start space-x-3">
+          <MapPin className="w-5 h-5 text-lime-400 mt-1" />
+          <span>
+            F-2, Chandaka Industrial Estate,<br />
+            In front of Infocity,<br />
+            Bhubaneswar, Odisha - 751024
+          </span>
+        </div>
+      </div>
+    </div>
+
+    {/* Bottom Box: Contact Form */}
+    <form className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-2xl shadow-lg text-white space-y-6">
+      <h2 className="text-2xl font-semibold text-lime-300">Send a Message</h2>
+      <input
+        type="text"
+        placeholder="Your Name"
+        className="w-full px-4 py-3 rounded-lg bg-white/10 placeholder-gray-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-lime-400"
+        required
+      />
+      <input
+        type="email"
+        placeholder="Your Email"
+        className="w-full px-4 py-3 rounded-lg bg-white/10 placeholder-gray-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-lime-400"
+        required
+      />
+      <textarea
+        placeholder="Your Message"
+        rows={4}
+        className="w-full px-4 py-3 rounded-lg bg-white/10 placeholder-gray-300 border border-white/20 focus:outline-none focus:ring-2 focus:ring-lime-400 resize-none"
+        required
+      ></textarea>
+      <button
+        type="submit"
+        className="w-full bg-lime-500 text-black font-semibold py-3 rounded-lg hover:bg-lime-600 transition duration-300"
+      >
+        Submit
+      </button>
+    </form>
+
+  </div>
+</section>
+
+
+
+
 
         {/* Google Map */}
-        <div className="rounded-2xl overflow-hidden shadow-xl h-[600px]">
+        <div className="rounded-2xl overflow-hidden shadow-xl h-[1000px]">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.1466901744744!2d85.8317!3d20.2961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d5f95e7d7f%3A0x9ff282b49b8b6cf6!2sTrident%20Academy%20of%20Technology!5e0!3m2!1sen!2sin!4v1617366233071!5m2!1sen!2sin"
+           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7482.0614668432645!2d85.807754!3d20.340349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190902b2a59ce5%3A0xdfb554a4e0bafffb!2sTrident%20Academy%20of%20Technology!5e0!3m2!1sen!2sus!4v1738245957890!5m2!1sen!2sus"
             width="100%"
             height="100%"
             loading="lazy"
