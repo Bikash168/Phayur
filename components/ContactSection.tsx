@@ -16,7 +16,7 @@ export default function ContactSection() {
         We’d love to hear from you.
       </p>
       <p className="text-center mb-12 text-gray-300 max-w-3xl mx-auto">
-        Whether you're a <strong>researcher</strong>, <strong>farmer</strong>, <strong>health practitioner</strong>, <strong>student</strong>, or <strong>organization</strong> working in related fields — we welcome your interest in collaborating, learning, or exploring our work further.
+        Whether you are a <strong>researcher</strong>, <strong>farmer</strong>, <strong>health practitioner</strong>, <strong>student</strong>, or <strong>organization</strong> working in related fields — we welcome your interest in collaborating, learning, or exploring our work further.
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -78,10 +78,6 @@ export default function ContactSection() {
 
   </div>
 </section>
-
-
-
-
 
         {/* Google Map */}
         <div className="rounded-2xl overflow-hidden shadow-xl h-[1000px]">
