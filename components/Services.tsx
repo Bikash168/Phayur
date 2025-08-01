@@ -18,42 +18,42 @@ export default function ServicesVerticalList() {
       title: '🔬 Research & Documentation',
       description:
         'We conduct in-depth studies to document Indigenous Knowledge Systems (IKS) and explore their intersections with modern science. Our team works with local communities, researchers, and practitioners to capture traditional practices in agriculture, healthcare, and environmental management.',
-      image: '/images/service-1.jpg',
+      image: '/service-1.jpg',
     },
     {
       icon: <FlaskConical size={28} className="text-green-700" />,
       title: '🌱 Product Development & Validation',
       description:
         'Our team co-develops innovative products by blending traditional formulations with contemporary scientific approaches. From herbal therapeutics to organic agricultural inputs, each product is tested and refined for modern-day relevance and impact.',
-      image: '/images/service-2.jpg',
+      image: '/service-2.jpg',
     },
     {
       icon: <TestTube size={28} className="text-green-600" />,
       title: '🧪 Formulation & Standardization',
       description:
         'We specialize in standardizing traditional formulations for wider applications in pharmaceuticals, nutraceuticals, and food processing. Our goal is to maintain the authenticity of indigenous methods while ensuring they meet quality benchmarks.',
-      image: '/images/service-3.jpg',
+      image: '/service-3.jpg',
     },
     {
       icon: <Sprout size={28} className="text-green-600" />,
       title: '🌾 Agro-Ecological Practices',
       description:
         'We support farmers and community groups in adopting sustainable agricultural models inspired by indigenous techniques. These services focus on soil health, crop diversity, organic inputs, and climate-smart strategies for resilient food systems.',
-      image: '/images/service-4.jpg',
+      image: '/service-4.jpg',
     },
     {
       icon: <HeartPulse size={28} className="text-green-700" />,
       title: '🌿 Healthcare and Healing Practices',
       description:
         'We work with traditional healers and medical experts to document and preserve native healing systems. These efforts support therapeutic innovation, community health outreach, and integration with holistic wellness solutions.',
-      image: '/images/service-5.jpg',
+      image: '/service-5.jpg',
     },
     {
       icon: <Globe2 size={28} className="text-green-800" />,
       title: '🌍 Environment and Biodiversity Solutions',
       description:
         'From seed conservation to natural resource management, we implement ecosystem-friendly practices rooted in indigenous ecological wisdom. These services promote biodiversity and help mitigate climate impacts.',
-      image: '/images/service-6.jpg',
+      image: '/service-6.jpg',
     },
   ];
 
