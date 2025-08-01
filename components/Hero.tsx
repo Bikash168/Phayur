@@ -3,6 +3,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel CSS
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   const slides = [
@@ -37,7 +38,7 @@ const Hero: React.FC = () => {
         >
           {slides.map((slide, index) => (
             <div key={index} className="relative h-screen w-full">
-              <img
+               <Image
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-full object-cover"
