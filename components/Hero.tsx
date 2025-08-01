@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel CSS
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 
 const Hero: React.FC = () => {
@@ -25,8 +25,7 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <section id='home' className="relative w-full h-[100vh]">
-      {/* This wrapper enables vertical scrolling on touch devices */}
+    <section id="home" className="relative w-full h-screen">
       <div style={{ touchAction: "pan-y" }}>
         <Carousel
           autoPlay
@@ -37,11 +36,14 @@ const Hero: React.FC = () => {
           className="h-full"
         >
           {slides.map((slide, index) => (
-            <div key={index} className="relative h-screen w-full">
-               <Image
+            <div key={index} className="relative w-full h-screen">
+              <Image
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-cover"
+                fill
+                priority={index === 0}
+                sizes="100vw"
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center px-4 text-center">
                 <h1 className="text-white text-4xl md:text-6xl font-bold mb-4 drop-shadow-md">
