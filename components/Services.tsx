@@ -2,58 +2,68 @@
 
 import { motion } from 'framer-motion';
 import {
-  Rocket,
-  ShieldCheck,
-  Users,
-  Leaf,
-  Lightbulb,
-  Code,
+  BookOpenCheck,
+  FlaskConical,
+  TestTube,
+  Sprout,
+  HeartPulse,
+  Globe2,
 } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ServicesVerticalList() {
   const services = [
     {
-      icon: <Rocket size={28} className="text-blue-600" />,
-      title: 'Innovative Solutions',
+      icon: <BookOpenCheck size={28} className="text-green-800" />,
+      title: '🔬 Research & Documentation',
       description:
-        'We specialize in delivering cutting-edge solutions that leverage the latest in technology, data analytics, and design thinking. From strategy to implementation, we help businesses unlock new opportunities and transform operations for long-term success.',
+        'We conduct in-depth studies to document Indigenous Knowledge Systems (IKS) and explore their intersections with modern science. Our team works with local communities, researchers, and practitioners to capture traditional practices in agriculture, healthcare, and environmental management.',
+      image: '/images/service-1.jpg',
     },
     {
-      icon: <ShieldCheck size={28} className="text-green-600" />,
-      title: 'Trusted Quality',
+      icon: <FlaskConical size={28} className="text-green-700" />,
+      title: '🌱 Product Development & Validation',
       description:
-        'Our commitment to excellence ensures that every project meets industry standards, safety regulations, and quality benchmarks. We follow robust testing protocols and continuous improvement practices to guarantee reliability and customer satisfaction.',
+        'Our team co-develops innovative products by blending traditional formulations with contemporary scientific approaches. From herbal therapeutics to organic agricultural inputs, each product is tested and refined for modern-day relevance and impact.',
+      image: '/images/service-2.jpg',
     },
     {
-      icon: <Users size={28} className="text-orange-500" />,
-      title: 'Client-Centric Approach',
+      icon: <TestTube size={28} className="text-green-600" />,
+      title: '🧪 Formulation & Standardization',
       description:
-        'We believe every client is unique. Our team works closely with stakeholders to understand their challenges and customize solutions that align with their business objectives, timeline, and budget. Your vision is our blueprint.',
+        'We specialize in standardizing traditional formulations for wider applications in pharmaceuticals, nutraceuticals, and food processing. Our goal is to maintain the authenticity of indigenous methods while ensuring they meet quality benchmarks.',
+      image: '/images/service-3.jpg',
     },
     {
-      icon: <Leaf size={28} className="text-emerald-500" />,
-      title: 'Eco Commitment',
+      icon: <Sprout size={28} className="text-green-600" />,
+      title: '🌾 Agro-Ecological Practices',
       description:
-        'Sustainability is at the core of our operations. From eco-friendly materials to energy-efficient systems, we ensure our services contribute to a greener future. Our practices align with ESG goals and promote responsible innovation.',
+        'We support farmers and community groups in adopting sustainable agricultural models inspired by indigenous techniques. These services focus on soil health, crop diversity, organic inputs, and climate-smart strategies for resilient food systems.',
+      image: '/images/service-4.jpg',
     },
     {
-      icon: <Lightbulb size={28} className="text-yellow-500" />,
-      title: 'Creative Thinking',
+      icon: <HeartPulse size={28} className="text-green-700" />,
+      title: '🌿 Healthcare and Healing Practices',
       description:
-        'Innovation drives us. Our multidisciplinary team fosters a culture of creative problem-solving, encouraging fresh perspectives and novel ideas that help us deliver high-impact solutions across industries.',
+        'We work with traditional healers and medical experts to document and preserve native healing systems. These efforts support therapeutic innovation, community health outreach, and integration with holistic wellness solutions.',
+      image: '/images/service-5.jpg',
     },
     {
-      icon: <Code size={28} className="text-purple-600" />,
-      title: 'Modern Technologies',
+      icon: <Globe2 size={28} className="text-green-800" />,
+      title: '🌍 Environment and Biodiversity Solutions',
       description:
-        'We harness the power of modern technology stacks—AI, machine learning, automation, IoT, and cloud platforms—to build agile, scalable, and intelligent systems that keep you ahead in the digital age.',
+        'From seed conservation to natural resource management, we implement ecosystem-friendly practices rooted in indigenous ecological wisdom. These services promote biodiversity and help mitigate climate impacts.',
+      image: '/images/service-6.jpg',
     },
   ];
 
   return (
-    <section className="relative z-10 py-24 px-6 md:px-16 bg-gradient-to-br from-green-50 via-white to-green-100 overflow-hidden">
+   <section className="relative z-10 py-2 px-6 md:px-16 bg-white overflow-hidden">
+
+      <div className="absolute inset-0 opacity-10 bg-[url('/grid.svg')] bg-cover bg-center pointer-events-none" />
+
       <motion.h2
-        className="text-4xl font-bold text-center text-green-900 mb-14"
+        className="text-4xl font-bold text-center text-green-900 mb-20"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -61,23 +71,37 @@ export default function ServicesVerticalList() {
         Our Services
       </motion.h2>
 
-      <div className="space-y-10">
+      <div className="space-y-8 relative z-10">
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="flex flex-col sm:flex-row items-start gap-6 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="flex flex-col md:flex-row justify-between items-center gap-6 border border-green-200 bg-white/80 backdrop-blur-lg rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <div className="bg-gray-100 p-3 rounded-full">{service.icon}</div>
-            <div className="text-left">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-3xl">
-                {service.description}
-              </p>
+            {/* Left Side Content */}
+            <div className="flex flex-col sm:flex-row items-start gap-4 max-w-3xl">
+              <div className="bg-green-100 p-3 rounded-full">{service.icon}</div>
+              <div>
+                <h3 className="text-xl font-semibold text-green-900 mb-1">
+                  {service.title}
+                </h3>
+                <p className="text-gray-700 text-base leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+
+            {/* Right Side Image */}
+            <div className="w-full sm:w-56 md:w-48 lg:w-64">
+              <Image
+                src={service.image}
+                alt={service.title}
+                width={256}
+                height={192}
+                className="rounded-xl object-cover w-full h-auto"
+              />
             </div>
           </motion.div>
         ))}

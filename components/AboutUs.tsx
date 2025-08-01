@@ -1,77 +1,34 @@
-'use client';
-import { motion } from 'framer-motion';
+"use client";
 
-export default function AboutUs() {
+import React from "react";
+
+export default function AboutHero() {
     return (
-        <section
-            id="who"
-            className="relative z-10 py-28 px-6 md:px-20 bg-gradient-to-b from-[#e6f4ea] via-[#f2fdf6] to-[#eaf9f1] overflow-hidden w-full m-0 p-0"
-        >
-            {/* Full width grid background */}
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/grid.svg')] bg-no-repeat bg-cover bg-center opacity-5 pointer-events-none z-0" />
+        <section className="relative w-full h-[80vh] bg-white overflow-hidden flex items-center justify-center">
 
-            {/* Main content */}
-            <motion.div
-                className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12 backdrop-blur-xl bg-white/80 border border-gray-200 rounded-3xl shadow-lg p-10 z-10"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-            >
-                {/* Left Side Image */}
-                <motion.div
-                    className="w-full md:w-5/6 lg:w-3/4 xl:w-2/3 mx-auto mb-10 py-6 md:py-0"
-                    initial={{ opacity: 0, x: -40 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.1, duration: 0.7 }}
-                >
-                    <img
-                        src="/leaf-pattern.jpg"
-                        alt="Nature Theme"
-                        className="w-full h-auto rounded-3xl shadow-xl object-cover"
-                    />
-                </motion.div>
-
-                {/* Right Side Text */}
-                <div className="w-full md:w-2/3">
-                    <motion.h2
-                        className="text-4xl sm:text-5xl font-bold text-green-800 mb-6 relative"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.1, duration: 0.7 }}
-                    >
-                        About Us
-                        <span className="block w-16 h-1 bg-green-500 mt-2 rounded"></span>
-                    </motion.h2>
-
-                    <motion.p
-                        className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-5"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, duration: 0.7 }}
-                    >
-                        We are a dynamic collective of scientists, technologists, and traditional knowledge holders, working to unite <strong>emerging global technologies</strong> with <strong>Indigenous Wisdom</strong>.
-                    </motion.p>
-
-                    <motion.p
-                        className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-5"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3, duration: 0.7 }}
-                    >
-                        Our impact spans across <strong>climate resilience, regenerative agriculture, bio-innovation, clean energy</strong>, and <strong>eco-conscious healthcare</strong>. We thrive at the intersection of tradition and innovation, driven by sustainability and social impact.
-                    </motion.p>
-
-                    <motion.p
-                        className="text-lg sm:text-xl text-gray-700 leading-relaxed"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, duration: 0.7 }}
-                    >
-                        Our mission is to engineer <strong>eco-aligned, community-centered solutions</strong> that nurture ecosystems and empower generations. With every initiative, we bring life to the vision of a regenerative, just, and thriving planet.
-                    </motion.p>
+            <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                
+                {/* Left Side Content */}
+                <div className="text-left space-y-6">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-green-900 leading-snug">
+                        Building a bridge between ancestral knowledge and modern innovation.
+                    </h1>
+                    <p className="text-lg md:text-xl text-gray-700">
+                        We are committed to building a bridge between ancestral knowledge and modern advancements. Our mission is to explore, develop, and apply integrated solutions that address ecological, agricultural, and healthcare challenges. By drawing insights from both Indigenous systems and scientific innovation, we strive to create approaches that are locally rooted and globally relevant.
+                    </p>
                 </div>
-            </motion.div>
+
+                {/* Right Side Image */}
+                <div className="w-full h-full flex justify-center items-center">
+                    <div className="relative w-full h-72 md:h-[450px] rounded-2xl overflow-hidden shadow-xl">
+                        <img
+                            src="/about-hero.jpg" // Replace with your image path
+                            alt="Innovative Ecology"
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
         </section>
     );
 }
