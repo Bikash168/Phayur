@@ -53,7 +53,7 @@ const Footer = () => {
         <div>
           <h4 className="text-xl font-semibold mb-3">Contact Us</h4>
           <p className="text-sm text-green-200">Email: info@phyur.in</p>
-          <p className="text-sm text-green-200 mt-1">Phone: +91-12345-67890</p>
+          <p className="text-sm text-green-200 mt-1">Phone: +91-9439-173220</p>
           <p className="text-sm mt-3 text-green-300">
             <a href="https://phyur.in" target="_blank" rel="noopener noreferrer" className="underline hover:text-lime-300">
               www.phyur.in
