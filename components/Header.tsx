@@ -72,11 +72,11 @@ const Header = () => {
                 <div className="md:hidden">
                     <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
                         {isOpen ? (
-                            <svg className="h-6 w-6 text-blue-900" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <svg className="h-6 w-6 text-green-900" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         ) : (
-                            <svg className="h-6 w-6 text-blue-900" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <svg className="h-6 w-6 text-green-900" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         )}
@@ -87,12 +87,12 @@ const Header = () => {
             {/* Mobile Menu */}
             {isOpen && (
                 <div className="md:hidden px-4 pb-4">
-                    <ul className="flex flex-col space-y-4 text-blue-900 text-base">
+                    <ul className="flex flex-col space-y-4 text-green-900 text-base">
                         {navLinks.map((link) => (
                             <li key={link.id}>
                                 <Link href={`#${link.id}`}>
                                     <span
-                                        className="block hover:text-blue-700"
+                                        className="block hover:text-green-700"
                                         onClick={() => setIsOpen(false)}
                                     >
                                         {link.label}

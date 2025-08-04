@@ -30,7 +30,7 @@ export default function ContactSection() {
             </div>
             <div className="flex items-center space-x-3 justify-center">
               <Mail className="w-5 h-5 text-lime-400" />
-              <span>contact@phayur.in</span>
+              <span>info@phayur.in</span>
             </div>
             <div className="flex items-start space-x-3 justify-center">
               <MapPin className="w-5 h-5 text-lime-400 mt-1" />
