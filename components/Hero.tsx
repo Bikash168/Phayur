@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <section id="home" className="relative w-full min-h-screen">
+    <section id="home" className="relative w-full min-h-screen overflow-y-auto">
       <div style={{ touchAction: "pan-y" }}>
         <Carousel
           autoPlay
