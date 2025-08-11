@@ -9,15 +9,18 @@ import DigitalPlatforms from "@/components/DigitalPlatforms";
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen">
+      {/* Header */}
       <Header />
 
       {/* Hero Section */}
-      <Hero />
+      <section className="animate-fade-in">
+        <Hero />
+      </section>
 
       {/* Who We Are Section */}
       <section
         id="aboutus"
-        className="py-8 md:py-10 bg-white px-4 md:px-12 text-center"
+        className="py-12 md:py-16 bg-gradient-to-r from-green-50 to-green-100 px-4 md:px-12 text-center animate-slide-up"
       >
         <AboutUs />
       </section>
@@ -25,7 +28,7 @@ export default function Home() {
       {/* What We Do Section */}
       <section
         id="services"
-        className="py-8 md:py-10 bg-white px-4 md:px-12 text-center"
+        className="py-12 md:py-16 bg-gradient-to-r from-white to-gray-50 px-4 md:px-12 text-center animate-slide-up"
       >
         <Services />
       </section>
@@ -33,7 +36,7 @@ export default function Home() {
       {/* Digital Platforms Section */}
       <section
         id="digital-platforms"
-        className="py-8 md:py-10 bg-white px-4 md:px-12 text-center"
+        className="py-12 md:py-16 bg-gradient-to-r from-green-50 to-green-100 px-4 md:px-12 text-center animate-slide-up"
       >
         <DigitalPlatforms />
       </section>
@@ -41,11 +44,12 @@ export default function Home() {
       {/* Contact Us Section */}
       <section
         id="contact"
-        className="py-8 md:py-10 bg-green-900 text-white px-4 md:px-12 text-center"
+        className="py-12 md:py-16 bg-gradient-to-r from-green-900 to-green-700 text-white px-4 md:px-12 text-center animate-slide-up"
       >
         <ContactSection />
       </section>
 
+      {/* Footer */}
       <Footer />
     </main>
   );
