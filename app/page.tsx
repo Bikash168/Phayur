@@ -15,22 +15,34 @@ export default function Home() {
       <Hero />
 
       {/* Who We Are Section */}
-      <section id="aboutus" className="py-20 bg-white px-4 md:px-12 text-center">
+      <section
+        id="aboutus"
+        className="py-8 md:py-10 bg-white px-4 md:px-12 text-center"
+      >
         <AboutUs />
       </section>
 
       {/* What We Do Section */}
-      <section id="services" className="py-20 bg-white px-4 md:px-12 text-center">
+      <section
+        id="services"
+        className="py-8 md:py-10 bg-white px-4 md:px-12 text-center"
+      >
         <Services />
       </section>
 
       {/* Digital Platforms Section */}
-      <section id="digital-platforms" className="py-20 bg-white px-4 md:px-12 text-center">
+      <section
+        id="digital-platforms"
+        className="py-8 md:py-10 bg-white px-4 md:px-12 text-center"
+      >
         <DigitalPlatforms />
       </section>
 
       {/* Contact Us Section */}
-      <section id="contact" className="py-20 bg-green-900 text-white px-4 md:px-12 text-center">
+      <section
+        id="contact"
+        className="py-8 md:py-10 bg-green-900 text-white px-4 md:px-12 text-center"
+      >
         <ContactSection />
       </section>
 
